@@ -22,15 +22,6 @@
       "command": "${workspaceFolder}/build/main",
       "dependsOn": "C++: build",
       "problemMatcher": []
-    },
-    {
-      "label": "C++: REPL (cling)",
-      "type": "shell",
-      "command": "cling",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      }
     }
   ]
 }
