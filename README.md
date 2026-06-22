@@ -1,65 +1,78 @@
-# C++ REPL Codespaces Template
+# C++ Codespaces Template
 
-A ready-to-use GitHub Codespaces template for **interactive C++ development** with:
+A ready-to-use GitHub Codespaces template for **professional C++ development** with:
 - ✅ **Autocomplete & IntelliSense** via MS C++ Tools
-- ✅ **Cling REPL** for interactive C++ execution
 - ✅ **CMake** build system
 - ✅ **Debugging** support (gdb/lldb)
 - ✅ **Code formatting** (clang-format)
+- ✅ **Static analysis** (clang-tidy)
 
 ## Quick Start
 
 ### 1. Open in Codespaces
-Click "Code" → "Codespaces" → "Create codespace on main"
+Click **"Code"** → **"Codespaces"** → **"Create codespace on main"**
 
-### 2. Run Examples
+### 2. Build & Run
 ```bash
 cmake --build build
 ./build/main
 ```
 
-### 3. Interactive REPL (Cling)
-```bash
-cling
-```
+Or use VS Code tasks:
+- **Ctrl+Shift+B** → Select **"C++: build"** or **"C++: run"**
 
-Then in the REPL:
-```cpp
-#include <iostream>
-int x = 5;
-std::cout << x * 2 << std::endl;  // Autocomplete works here!
-```
+### 3. Debug
+Press **F5** to start debugging with GDB (breakpoints, stepping, variable inspection)
 
-## Tasks in VS Code
+## Features
 
-Use `Ctrl+Shift+B` to access:
-- **C++: build** - Compile the project
-- **C++: run** - Build and run
-- **C++: REPL (cling)** - Start interactive shell
+### 🧠 IntelliSense & Autocomplete
+- Full C++ STL suggestions
+- Type any STL class/function and press `Ctrl+Space`
+- Hover over symbols for documentation
+
+### 🔨 Build System
+- CMake pre-configured
+- Easy to add source files - just modify `CMakeLists.txt`
+
+### 🐛 Debugging
+- GDB/LLDB integration
+- Breakpoints, step-through, variable inspection
+- Launch config in `.vscode/launch.json`
+
+### 📝 Code Quality
+- **clang-format** - Automatic code formatting
+- **clang-tidy** - Static analysis and suggestions
 
 ## File Overview
 
-- `src/main.cpp` - Example C++ program
-- `src/examples.cpp` - REPL practice snippets
-- `CMakeLists.txt` - Build configuration
-- `.vscode/` - Editor settings, launch configs, and tasks
+- `src/main.cpp` - Example C++ program with STL demonstrations
+- `src/examples.cpp` - Additional examples for reference
+- `CMakeLists.txt` - CMake build configuration
+- `.vscode/` - Editor settings, debugging config, and tasks
 - `.devcontainer/` - Codespaces environment setup
 
-## Debugging
+## VS Code Tasks
 
-Press `F5` to debug `main` with GDB breakpoints, stepping, and variable inspection.
+Press **Ctrl+Shift+B** to access:
+- **C++: build** - Compile the project
+- **C++: run** - Build and run executable
 
-## Extensions Included
+## Tips
 
+- 💡 Use `Ctrl+Space` anywhere in C++ code for autocomplete
+- 📚 Hover over any function/variable for docs
+- 🔧 Modify `CMakeLists.txt` to add more `.cpp` files
+- 🎯 Use `F5` to debug with full breakpoint support
+- 🧹 Run `clang-format -i src/*.cpp` for auto-formatting
+
+## Extensions
+
+Included in the dev container:
 - **C/C++ Extension Pack** - IntelliSense, debugging, code analysis
 - **CMake Tools** - CMake integration
 - **Code Runner** - Quick code execution
 
-## Tips
+---
 
-- Type any C++ STL class/function and press `Ctrl+Space` for autocomplete
-- Hover over symbols for documentation
-- Use `//` or `/* */` for inline comments
-- Modify `CMakeLists.txt` to add more source files
-
-Enjoy interactive C++ development! 🚀
+Enjoy professional C++ development in Codespaces! 🚀
