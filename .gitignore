@@ -1,0 +1,7 @@
+build/
+.DS_Store
+*.o
+*.out
+*.swp
+.vscode/.history/
+CMakeUserPresets.json

@@ -1,0 +1,33 @@
+{
+  "name": "C++ REPL Codespace",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "[cpp]": {
+      "editor.defaultFormatter": "ms-vscode.cpptools",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+      }
+    },
+    "C_Cpp.default.intelliSenseEngine": "Default",
+    "C_Cpp.autoAddFileAssociations": true,
+    "C_Cpp.codeAnalysis.enabled": true,
+    "files.exclude": {
+      "**/*.o": true,
+      "**/*.out": true
+    }
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake",
+    "formulahendry.code-runner"
+  ],
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "remoteUser": "vscode"
+}
